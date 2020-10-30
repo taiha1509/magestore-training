@@ -8,7 +8,7 @@ class Customer extends AbstractModel implements IdentityInterface
 {
     public function _construct()
     {
-        $this->_init('Learning\Magetore\Mode\ResourceModel\Customer');
+        $this->_init('Learning\Magestore\Model\ResourceModel\Customer');
     }
 
     public function getIdentities()
@@ -16,3 +16,4 @@ class Customer extends AbstractModel implements IdentityInterface
         return 'mgt_Customer' . $this->getId();
     }
 }
+

@@ -8,6 +8,6 @@ class Collection extends AbstractCollection
 {
     protected function _construct()
     {
-        $this->_init(Customer::class, \Learning\Magestore\Model\ResourceModel\Customer::clsas);
+        $this->_init(Customer::class, \Learning\Magestore\Model\ResourceModel\Customer::class);
     }
 }

@@ -24,7 +24,7 @@ class View extends \Magento\Framework\App\Action\Action
     }
 
     /**
-     * View  page action
+     * view  page action
      *
      * @return \Magento\Framework\Controller\ResultInterface
      */

@@ -13,7 +13,7 @@ class Index extends Action
     public function __construct(
         Context $context,
         PageFactory $pageFactory,
-        Learning\Magestore\Model\CustomerFactory $customerFactory
+        \Learning\Magestore\Model\CustomerFactory $customerFactory
     ) {
         $this->_pageFactory = $pageFactory;
         $this->_customerFactory = $customerFactory;
@@ -24,6 +24,8 @@ class Index extends Action
     {
         $post = $this->_customerFactory->create();
         $collection = $post->getCollection();
+//        var_dump($collection);
+        echo 1;
         foreach ($collection as $item) {
             echo '<pre>';
             print_r($item->getData());
